@@ -1,0 +1,73 @@
+:root {
+  --beige: #E3E7D3;
+  --greenish_blue: #BED1BA;
+  --artichoke: #939F86;
+  /* --pine: #25291C; */
+  --pine: #212419;
+  --yellow: #F3E482;
+}
+
+@font-face {
+  font-family: 'Watermelon';
+  src: url('../src/fonts/Watermelon-Regular.woff2') format('woff2'),
+      url('../src/fonts/Watermelon-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.App {
+  text-align: center;
+  display: block;
+}
+
+.App-header {
+  background-color: var(--greenish_blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Watermelon;
+  font-size: calc(30px + 10vmin);
+  color: white;
+}
+
+header {
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--artichoke);
+}
+
+.nav_container {
+  background-color: var(--artichoke);
+  width: 100vw;
+  padding: 10;
+}
+
+li {
+  display: inline-block;
+  float: right;
+}
+
+a {
+  padding: 8px;
+  background-color: var(--artichoke);
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
